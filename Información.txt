@@ -1,0 +1,6 @@
+Hola, queríamos informar sobre nuestra situación actual acerca de nuestra implementación del challenge,
+tuvimos mala organización del tiempo , por ende, tenemos algunas implementaciones incompletas pero queríamos aclarar
+que conocimientos de CRUD y MAPEO tenemos, pero Seguridad y Autenticación no tanto. Disculpen por no prestar mejor nuestro tiempo con ustedes.
+Esperamos con ansias y la mejor energía la siguiente capacitación.
+Saludos Mateo Ollocco y Fabio Olivera.
+ 
