@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "21dbca19-3c5f-427e-8063-8f10283c7601",
+		"name": "Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAll Personajes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/personajes/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"personajes",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Personaje",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n    \"imagen\":\"jahg\",\r\n    \"nombre\":\"Super Yo\",\r\n    \"edad\": 84,\r\n    \"peso\": 47.56,\r\n    \"historia\":\"vive en una cueva\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/personajes/guardar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"personajes",
+						"guardar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Personaje",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idPersonaje\": 2,\r\n    \"imagen\": \"imagen\",\r\n    \"nombre\": \"servilleta\",\r\n    \"edad\": 18,\r\n    \"peso\": 20.56,\r\n    \"historia\": \"vive enrollado\",\r\n    \"peliculasyseries\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/personajes/actualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"personajes",
+						"actualizar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById Personaje",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/personajes/leer/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"personajes",
+						"leer",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Personaje",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/personajes/eliminar/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"personajes",
+						"eliminar",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
