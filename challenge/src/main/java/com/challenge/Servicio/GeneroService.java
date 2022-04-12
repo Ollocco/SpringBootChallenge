@@ -28,6 +28,11 @@ public class GeneroService implements GeneroRepository{
     public List<Genero> findAll() {
         return generoRepository.findAll();
     }
+
+    @Override
+    public <S extends Genero> S save(S entity) {
+        return generoRepository.save(entity);
+    }
     
     @Override
     public List<Genero> findAll(Sort sort) {
@@ -157,12 +162,6 @@ public class GeneroService implements GeneroRepository{
 
     @Override
     public Optional<Genero> findById(Integer id) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public <S extends Genero> S save(S entity) {
         // TODO Auto-generated method stub
         return null;
     }

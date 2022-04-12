@@ -21,12 +21,39 @@ public class PersonajeService implements PersonajeRepository{
     @Autowired
     private PersonajeRepository personajeRepository;
 
-    //IMPLEMENTADO
+    //LISTAR TODOS
     @Override
     public List<Personaje> findAll() {
         return personajeRepository.findAll();
     }
 
+    //ELIMINAR
+    @Override
+    public void delete(Personaje entity) {
+        personajeRepository.delete(entity);   
+    }
+
+     //ELIMINAR POR ID
+     @Override
+     public void deleteById(Integer id) {
+         personajeRepository.deleteById(id);     
+     }
+
+     @Override
+    public <S extends Personaje> S save(S entity) {
+        return personajeRepository.save(entity);
+    }
+    @Override
+    public Optional<Personaje> findById(Integer id) {
+        return personajeRepository.findById(id);
+    }
+/*
+    @Override
+    public Personaje findById(Integer id) {
+        Optional<Personaje> personajeOptional= personajeRepository.findById(id);
+        return personajeOptional.orElse(null);
+    }
+*/ 
     @Override
     public List<Personaje> findAll(Sort sort) {
         // TODO Auto-generated method stub
@@ -117,12 +144,6 @@ public class PersonajeService implements PersonajeRepository{
         return 0;
     }
 
-    //ELIMINAR
-    @Override
-    public void delete(Personaje entity) {
-        personajeRepository.delete(entity);   
-    }
-
     @Override
     public void deleteAll() {
         // TODO Auto-generated method stub
@@ -141,29 +162,10 @@ public class PersonajeService implements PersonajeRepository{
         
     }
 
-    //ELIMINAR POR ID
-    @Override
-    public void deleteById(Integer id) {
-        personajeRepository.deleteById(id);
-        
-    }
-
     @Override
     public boolean existsById(Integer id) {
         // TODO Auto-generated method stub
         return false;
-    }
-
-    @Override
-    public Optional<Personaje> findById(Integer id) {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public <S extends Personaje> S save(S entity) {
-        // TODO Auto-generated method stub
-        return null;
     }
 
     @Override
