@@ -38,7 +38,10 @@ public class PersonajeService implements PersonajeRepository{
      public void deleteById(Integer id) {
          personajeRepository.deleteById(id);     
      }
-
+     //ACTUALIZAR
+     public void actualizar(Personaje personaje){
+         
+     }
      @Override
     public <S extends Personaje> S save(S entity) {
         return personajeRepository.save(entity);
